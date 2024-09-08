@@ -105,7 +105,8 @@ def in_mem(in_args):
         else:
             add_dict[add] = [val, height]
 
-    for key in add_dict.iterkeys():
+    #for key in add_dict.iterkeys():
+    for key in add_dict.keys():
         ll = add_dict[key]
         yield key, ll[0], ll[1]
 
